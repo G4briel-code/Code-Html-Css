@@ -9,6 +9,7 @@
             margin-left: 8px;
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
         td, th{
             border: 1px solid black;
@@ -19,11 +20,11 @@
             font-size: 1.5em;
             font-weight: bold;
             padding: 10px;
-            background-color: lightgray;
+            background-color: rgb(232, 228, 228);
         }
 
         thead, tfoot{
-            background-color: dimgray;
+            background-color: #444343;
             color: white;
         }
 
@@ -39,7 +40,11 @@
             background-color: lightgray;
         }
         
-
+        thead > tr > th {
+            position: sticky;
+            top: 0px;
+            background-color: #444343;
+        }
         
     </style>
 </head>
